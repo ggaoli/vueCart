@@ -22,6 +22,9 @@ new Vue({
                     this.addressList = res.result;
                 }
             })
+        },
+        loadMore:function () {
+            this.limitNum=this.addressList.length;
         }
     }
 });
