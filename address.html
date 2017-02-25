@@ -55,7 +55,7 @@
             <div class="addr-list-wrap">
                 <div class="addr-list">
                     <ul>
-                        <li v-for="(item,index) in filterAddress">
+                        <li v-for="(item,index) in filterAddress" :class="{'check':index==currentIndex}" @click="currentIndex=index">
                             <dl>
                                 <dt>{{item.userName}}</dt>
                                 <dd class="address">{{item.streetName}}</dd>
@@ -72,7 +72,7 @@
                                 </a>
                             </div>
                             <div class="addr-opration addr-set-default" v-if="!item.isDefault">
-                                <a href="javascript:;" class="addr-set-default-btn"><i>设为默认</i></a>
+                                <a href="javascript:;" class="addr-set-default-btn" @click="setDefault(item.addressId)"><i>设为默认</i></a>
                             </div>
                             <div class="addr-opration addr-default" v-if="item.isDefault">默认地址</div>
                         </li>
@@ -105,11 +105,11 @@
             <div class="shipping-method-wrap">
                 <div class="shipping-method">
                     <ul>
-                        <li class="check">
+                        <li  :class="{'check':shippingMethod==1}" @click="shippingMethod=1">
                             <div class="name">标准配送</div>
                             <div class="price">Free</div>
                         </li>
-                        <li>
+                        <li :class="{'check':shippingMethod==2}" @click="shippingMethod=2">
                             <div class="name">高级配送</div>
                             <div class="price">180</div>
                         </li>
