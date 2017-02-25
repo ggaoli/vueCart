@@ -12,7 +12,7 @@
     },
     {
       "addressId":"100002",
-      "userName":"JackBean",
+      "userName":"jane",
       "streetName":"北京市朝阳区朝阳公园",
       "postCode":"100001",
       "tel":"12345678901",
@@ -20,8 +20,8 @@
     },
     {
       "addressId":"100003",
-      "userName":"JackBean",
-      "streetName":"北京市朝阳区朝阳公园",
+      "userName":"ggaoli",
+      "streetName":"福州市鼓楼区软件云",
       "postCode":"100001",
       "tel":"12345678901",
       "isDefault":false
@@ -36,8 +36,8 @@
     },
     {
       "addressId":"100005",
-      "userName":"JackBean",
-      "streetName":"北京市朝阳区朝阳公园",
+      "userName":"hello",
+      "streetName":"台江万达",
       "postCode":"100001",
       "tel":"12345678901",
       "isDefault":false
